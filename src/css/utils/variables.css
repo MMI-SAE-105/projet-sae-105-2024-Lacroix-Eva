@@ -1,0 +1,34 @@
+ :root {
+
+    /* Color styles */
+    --blanc: #ffffff;
+    --bleu-clair: #c5e9ff;
+    --bleu-foncé: #1e054e;
+    --bleu-inter: #004684;
+    --filtre-image: #035aa68c;
+    --fond-cards: #035aa633;
+    --fond-slide: #ededed;
+    --gris: #c7c7c7;
+    --noir: #000000;
+    --pattern: #035aa640;
+
+    /* Text-size styles */
+
+    --fs-xs: 0.75rem;
+    --fs-s: 0.875rem;
+    --fs-m: 1rem;
+    --fs-l: 1.875rem;
+    --fs-xl: 2.5rem;
+
+    /* Font-family styles */
+    --Butler: 'Butler', serif;
+    --Montserrat: 'Montserrat', sans-serif;
+    --Mulish: 'Mulish', sans-serif;
+
+    /* Spacing styles */
+    --space1x: 10px;
+    --space2x: 20px;
+    --space3x: 30px;
+    --space4x: 40px;
+    --space5x: 50px;
+ }
