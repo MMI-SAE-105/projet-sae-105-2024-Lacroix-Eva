@@ -14,11 +14,12 @@
 
     /* Text-size styles */
 
-    --fs-xs: 0.75rem;
-    --fs-s: 0.875rem;
-    --fs-m: 1rem;
-    --fs-l: 1.875rem;
-    --fs-xl: 2.5rem;
+    --fs-xs: 0.75rem; /* 12px */
+    --fs-s: 0.875rem; /* 14px */
+    --fs-m: 1rem; /* 16px */
+    -fs-l: 1.25rem; /* 20px */
+    --fs-xl: 1.875rem; /* 30px */
+    --fs-xxl: 2.5rem; /* 40px */
 
     /* Font-family styles */
     --Butler: 'Butler', serif;
