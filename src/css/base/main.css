@@ -5,6 +5,15 @@
 }
 
 body {
-    margin: var(--space2x);
     background-color: var(--bleu-clair);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
 }
