@@ -1,0 +1,125 @@
+.menu {
+    visibility: hidden;
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background-color: var(--bleu-clair);
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 100px;
+    transform: translateX(100vw);
+    transition: all 0.3s ease-in-out;
+    padding-left: var(--space2x);
+    padding-right: var(--space2x);
+    overflow: hidden;
+}
+
+.menu__list {
+    padding: 0;
+}
+
+.menu[aria-hidden="false"] {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.menu__link {
+    color: var(--bleu-foncé);
+    text-decoration: none;
+    font-size: var(--fs-xl);
+    display: block;
+    font-family: var(--Butler);
+    line-height: 110%;
+    padding-bottom: var(--space4x);
+    font-weight: bold;
+}
+
+.menu__divider {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.menu__divider-line {
+    border: none;
+    border-top: 1px solid var(--bleu-foncé);
+    margin: 0;
+    height: 0;
+    width: 100%;
+}
+
+.menu__sublink {
+    color: var(--bleu-foncé);
+    text-decoration: none;
+    font-size: var(--fs-m);
+    display: block;
+    font-family: var(--Butler);
+    line-height: 110%;
+    padding-bottom: var(--space3x);
+    font-weight: bold;
+}
+
+.menu__item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.menu-btn {
+    position: relative;
+    width: 24px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+
+}
+
+.menu-btn__bar {
+    content: "";
+    background: var(--bleu-clair);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+    content: "";
+    background: var(--bleu-clair);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-btn__bar::before {
+    top: -10px;
+}
+
+.menu-btn__bar::after {
+    top: 10px;
+}
+
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+    transform: rotate(135deg);
+    background: var(--bleu-foncé);
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+    transform: rotate(90deg);
+    top: 0;
+}
