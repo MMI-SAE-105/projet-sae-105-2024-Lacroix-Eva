@@ -1,0 +1,19 @@
+.header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0 var(--space2x);
+    padding-top: var(--space2x);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: block;
+}
+
+.header__language {
+    display: flex;
+    align-items: left;
+}
