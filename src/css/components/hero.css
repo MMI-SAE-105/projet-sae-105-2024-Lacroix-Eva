@@ -1,26 +1,12 @@
 .hero__title--home {
     color: var(--bleu-foncé);
-    text-align: center;
-    font-family: var(--Butler);
-    font-size: var(--fs-xl);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
     padding-top: 90px;
     margin:0
 }
 
 .hero__description--home {
-    color: var(--bleu-inter);
-    font-family: var(--Montserrat);
     font-size: var(--fs-m);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    margin-left: var(--space2x);
-    margin-right: var(--space2x);
     margin-top: 265px;
-
 }
 
 
