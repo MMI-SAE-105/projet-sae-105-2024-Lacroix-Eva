@@ -1,6 +1,6 @@
 .contact__form {
     margin-right: var(--space2x);
-    margin-left: var(--space2x);
+    margin-top: var(--space5x);
 }
 
 .contact__group::after {
@@ -9,9 +9,7 @@
     width: 300px;
     height: 1px;
     display: block;
-    margin-top: var(--space2x);
-    margin-bottom: 15px;
-    margin-right: var(--space2x);
+    margin: var(--space2x) var(--space2x) 15px var(--space2x);
 }
 
 .contact__group__message {
@@ -24,9 +22,7 @@
     width: 300px;
     height: 130px;
     border: 1px solid var(--bleu-foncé);
-    margin-right: var(--space2x);
-    margin-top: var(--space4x);
-    margin-bottom: 16px;
+    margin: var(--space4x) var(--space2x) 15px var(--space2x);
     display: block;
     position: absolute;
 }
@@ -34,14 +30,12 @@
 .contact__item {
     color: var(--bleu-foncé);
     font-size: var(--fs-xs);
-    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .contact__champ {
-    margin-left: 150px;
     margin-bottom: var(--space2x);
-    margin-right: 0px;
-    padding-top: var(--space1x);
+    padding-top: var(--space2x);
     font-size: var(--fs-s);
-
 }
