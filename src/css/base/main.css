@@ -60,6 +60,15 @@ h3 {
     margin-left: var(--space2x);
 }
 
+h3::after {
+    content: "";
+    display: block;
+    background-color: var(--bleu-foncé);
+    margin-top: var(--space1x);
+    width: 229px;
+    height: 1.5px;
+}
+
 h4 {
     font-family: var(--Montserrat);
     font-size: var(--fs-xs);
@@ -80,5 +89,6 @@ p {
     line-height: 160%;
     margin-right: var(--space2x);
     margin-left: var(--space2x);
+    font-size: var(--fs-xs);
 }
 

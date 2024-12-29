@@ -1,0 +1,12 @@
+
+.section__title {
+    margin-top: var(--space3x);
+}
+
+.section__text {
+    margin-top: 15px;
+}
+
+.sections--a_propos{
+    margin-bottom: var(--space5x);
+}
