@@ -3,9 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Echoes of Dialogue</title>
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/js/script.js"></script>
 </head>
+
 <body>
-    
+    <img class="background__img" src="/assets/img/Background_pages.webp" alt="Background Image" />
+    <header class="header">
+        <a class="header__logo-link" href="/en/index.html">
+            <img class="header__logo" src="/assets/icons/logo_clair.svg" alt="Echoes of Dialogue Logo" />
+        </a>
+
+        <a class="header__language-link" href="/fr/A_propos.html">
+            <img class="header__language" src="/assets/icons/langue_en.svg" alt="Switch to French" />
+        </a>
+
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/The_talking_stick.html">The Talking Stick</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/The_Kings_Speech.html">The King's Speech</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/Sidney_Lumet.html">Sidney Lumet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/The_Circle.html">The Circle</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/The_Sound_of_Silence.html">The Sound of Silence</a>
+                </li>
+                <li class="menu__divider">
+                    <hr class="menu__divider-line">
+                </li>
+                <li class="menu__item">
+                    <a class="menu__sublink" href="/en/Other_projects.html">Other Projects</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__sublink" href="/en/Contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__sublink" href="/en/Glossary.html">Glossary</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__sublink" href="/en/About.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h1 class="hero__title">About</h1>
+            <p class="hero__description hero__description--secondaire">Welcome to Echoes of Dialogue, a project dedicated to exploring the evolution of communication over time, from traditional objects to modern digital technologies.</p>
+        </div>
+        <div class="sections sections--a_propos">
+            <section class="section">
+                <h3 class="section__title">Who am I?</h3>
+                <p class="section__text">My name is Eva LACROIX, a student in Multimedia and Internet Professions (MMI) in Montbéliard.</p>
+            </section>
+            <section class="section">
+                <h3 class="section__title">Why this project?</h3>
+                <p class="section__text">The Echoes of Dialogue project was born from a reflection on the evolution of communication methods. In a world where information technologies are omnipresent, it seems essential to me to understand how ancient practices, based on listening and respect, can inspire our way of interacting today. I wanted to create a space where we can explore the parallels between traditional objects like the talking stick and modern tools like the microphone or the mute button.</p>
+            </section>
+            <section class="section">
+                <h3 class="section__title">My approach to the project</h3>
+                <p class="section__text">This site is a dive into the history of communication, with the idea of creating links between different eras. Through the articles presented, I sought to show that the respect for speech, embodied by objects such as the talking stick, finds echoes in our modern technologies that regulate communication. My approach is part of a broader reflection on speech management, active listening, and the importance of structuring exchanges in an information-saturated world.</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <a class="footer__logo-link" href="/en/index.html">
+            <img class="footer__logo" src="/assets/icons/logo_fonce.svg" alt="Logo" />
+        </a>
+        <nav class="footer__menu">
+            <h4 class="footer__title">Menu</h4>
+        </nav>
+        <div class="footer__contact">
+            <h4 class="footer__title">Contact</h4>
+            <p class="footer__text">Eva LACROIX, MM1 TPB2</p>
+            <a class="footer__mail" href="mailto:lacroixeva32@gmail.com">lacroixeva32@gmail.com</a>
+        </div>
+        <div class="footer__mentions_legales">
+            <h4 class="footer__title">Legal Notice</h4>
+            <p class="footer__text">“Project carried out in 2024 as part of an educational exercise at the <a
+                    class="footer__link" href="https://blogdummi.fr/">MMI department of Montbéliard</a>”</p>
+        </div>
+        <div class="footer__social">
+            <h4 class="footer__title">Follow Me</h4>
+            <ul class="footer__list list-unstyled">
+                <li>
+                    <a href="https://www.linkedin.com/in/eva-lacroix-50ab6131a/" aria-label="Visit my LinkedIn page">
+                        <img src="/assets/icons/linkedin.svg" aria-hidden="true" alt="" width="24" height="24" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/_e_lcx_/" aria-label="Visit my Instagram page">
+                        <img src="/assets/icons/instagram.svg" aria-hidden="true" alt="" width="24" height="24" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/eva.lacroix.184?locale=fr_FR" aria-label="Visit my Facebook page">
+                        <img src="/assets/icons/facebook.svg" aria-hidden="true" alt="" width="24" height="24" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
