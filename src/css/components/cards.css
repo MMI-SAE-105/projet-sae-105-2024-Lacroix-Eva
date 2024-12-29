@@ -1,32 +1,44 @@
 
-.cards--home{
-    margin-bottom: var(--space2x);
+.cards {
+    margin: var(--space2x);
 }
 
-.card--home{
+.card {
     border-radius: 15px;
+    margin-bottom: var(--space2x);
     background: var(--fond-cards);
-    margin: var(--space2x);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.card__title--home {
+.card__title {
     margin: var(--space2x);
 }
 
-.card__description--home {
+.card__description {
     font-size: var(--fs-s);
     margin-bottom: var(--space2x);
     margin-top: 0px;
 }
 
-.card__img--home {
+.card__img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
     border-radius: 15px 15px 0px 0px;
+}
+
+.card--projet{
+    border-radius: 20px
+}
+
+.card__description--projet {
+    margin-bottom: 0px;
+}
+
+.card__title--projet {
+    margin-bottom: var(--space1x);
 }

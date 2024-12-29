@@ -1,3 +1,13 @@
+.hero__description {
+    margin-top: 152px;
+    margin-bottom: var(--space2x);
+    font-size: var(--fs-xs);
+}
+
+.hero__title {
+    margin-top: 75px;
+}
+
 .hero__title--home {
     color: var(--bleu-foncé);
     padding-top: 90px;
