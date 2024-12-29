@@ -1,5 +1,5 @@
 .footer {
-    background: var(--Dgrad-footer, linear-gradient(180deg, #C5E9FF 0%, #11307A 31.9%, #1E054E 100%));
+    background: linear-gradient(180deg, #C5E9FF 0%, #11307A 23%, #1E054E 100%);
     font-size: var(--fs-xs);
 }
 
@@ -23,6 +23,7 @@
 
 .footer__mail {
     color: var(--gris);
+    font-family: var(--Montserrat);
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
