@@ -1,11 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Echoes of Dialogue</title>
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/js/script.js"></script>
 </head>
+
 <body>
-    
+    <header class="header">
+        <a class="header__logo-link" href="/">
+            <img class="header__logo" src="/assets/icons/logo_clair.svg" alt="Echoes of Dialogue Logo" />
+        </a>
+
+        <a class="header__language-link" href="/fr/index.html">
+            <img class="header__language" src="/assets/icons/langue.svg" alt="Switch to French" />
+        </a>
+
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link" href="/">Talking Stick</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/">The King's Speech</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/">Sidney Lumet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/">The Circle</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/">The Sound of Silence</a>
+                </li>
+                <li class="menu__divider">
+                    <hr class="menu__divider-line">
+                </li>
+                <li class="menu__item">
+                    <a class="menu__sublink" href="/">Other Projects</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__sublink" href="/">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__sublink" href="/">Glossary</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__sublink" href="/">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero hero--home">
+            <h1 class="hero__title hero__title--home">Echoes of Dialogue</h1>
+            <img class="hero__img hero__img--home" src="/assets/img/Img_header.webp" alt="Home Image" />
+            <p class="hero__description hero__description--home">Explore how the traditions of the talking stick inspire modern communication technologies.</p>
+        </div>
+        <section class="cards cards--home">
+            <article class="card card--home">
+                <img class="card__img card__img--home" src="/assets/img/Articles/Baton_de_parole.webp"
+                    alt="The Talking Stick: A Symbol of Listening">
+                <h2 class="card__title card__title--home">The Talking Stick: A Symbol of Listening</h2>
+                <p class="card__description card__description--home">Discover how the talking stick, used in tribal councils, embodies respect, listening, and order in speech management.</p>
+                <a class="card__button card__button--home" href="/fr/Le_baton_de_parole.html">Learn more</a>
+            </article>
+            <article class="card card--home">
+                <img class="card__img card__img--home" src="/assets/img/Articles/Le_Discours_d_un_roi.webp"
+                    alt="The King's Speech">
+                <h2 class="card__title card__title--home">The King's Speech (2010)</h2>
+                <p class="card__description card__description--home">Explore how King George VI overcomes his stammer to transform speech into a weapon of power and unity in the face of adversity.</p>
+                <a class="card__button card__button--home" href="/fr/Le_Discours_d_un_roi.html">Learn more</a>
+            </article>
+            <article class="card card--home">
+                <img class="card__img card__img--home" src="/assets/img/Articles/Sidney_Lumet.webp" alt="Sidney Lumet">
+                <h2 class="card__title card__title--home">Sidney Lumet</h2>
+                <p class="card__description card__description--home">Dive into the world of Sidney Lumet, where every dialogue becomes a weapon of truth and justice, embodying the power of words on screen.</p>
+                <a class="card__button card__button--home" href="/fr/Sidney_Lumet.html">Learn more</a>
+            </article>
+            <article class="card card--home">
+                <img class="card__img card__img--home" src="/assets/img/Articles/Le_Cercle.webp"
+                    alt="The Circle - Dave Eggers">
+                <h2 class="card__title card__title--home">The Circle - Dave Eggers</h2>
+                <p class="card__description card__description--home">Discover a future where transparency reigns and speech loses its meaning, in a society where privacy fades behind technological omnipresence.</p>
+                <a class="card__button card__button--home" href="/fr/Le_Cercle.html">Learn more</a>
+            </article>
+            <article class="card card--home">
+                <img class="card__img card__img--home" src="/assets/img/Articles/The_Sound_of_Silence.webp"
+                    alt="The Sound of Silence - Simon & Garfunkel">
+                <h2 class="card__title card__title--home">The Sound of Silence - Simon & Garfunkel</h2>
+                <p class="card__description card__description--home">Dive into the world of The Sound of Silence, where silence embodies modern solitude and the silent cry of a disconnected society.</p>
+                <a class="card__button card__button--home" href="/fr/The_Sound_of_Silence.html">Learn more</a>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <a class="footer__logo-link" href="/fr/index.html">
+            <img class="footer__logo" src="/assets/icons/logo_fonce.svg" alt="Logo" />
+        </a>
+        <nav class="footer__menu">
+            <h3 class="footer__title">Menu</h3>
+        </nav>
+        <div class="footer__contact">
+            <h3 class="footer__title">Contact</h3>
+            <p class="footer__text">Eva LACROIX, MM1 TPB2</p>
+            <a class="footer__mail" href="mailto:lacroixeva32@gmail.com">lacroixeva32@gmail.com</a>
+        </div>
+        <div class="footer__mentions_legales">
+            <h3 class="footer__title">Legal Notice</h3>
+            <p class="footer__text">“Project carried out in 2024 as part of an educational exercise at the department <a
+                    class="footer__link" href="https://blogdummi.fr/">MMI of Montbéliard</a>”</p>
+        </div>
+        <div class="footer__social">
+            <h3 class="footer__title">Follow us</h3>
+            <ul class="footer__list list-unstyled">
+                <li>
+                    <a href="https://www.linkedin.com/in/eva-lacroix-50ab6131a/" aria-label="Visit my LinkedIn page">
+                        <img src="/assets/icons/linkedin.svg" aria-hidden="true" alt="" width="24" height="24" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/_e_lcx_/" aria-label="Visit my Instagram page">
+                        <img src="/assets/icons/instagram.svg" aria-hidden="true" alt="" width="24" height="24" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/eva.lacroix.184?locale=fr_FR"
+                        aria-label="Visit my Facebook page">
+                        <img src="/assets/icons/facebook.svg" aria-hidden="true" alt="" width="24" height="24" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
