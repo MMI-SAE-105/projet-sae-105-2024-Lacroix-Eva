@@ -1,9 +1,3 @@
-.hero--home {
-    width: auto;
-    height: 356px;
-    display: flow-root;
-}
-
 .hero__title--home {
     color: var(--bleu-foncé);
     text-align: center;
@@ -12,16 +6,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
-    margin-top: 173px;
-}
-
-.hero__img--home {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: -1;
+    padding-top: 90px;
+    margin:0
 }
 
 .hero__description--home {

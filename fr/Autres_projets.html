@@ -1,11 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Echoes of Dialogue</title>
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/js/script.js"></script>
 </head>
+
 <body>
-    
+    <header class="header">
+        <a class="header__logo-link" href="/fr/index.html">
+            <img class="header__logo" src="/assets/icons/logo_clair.svg" alt="Logo Echoes of Dialogue" />
+        </a>
+
+        <a class="header__language-link" href="/en/index.html">
+            <img class="header__language" src="/assets/icons/langue_fr.svg" alt="Passer en langue anglaise" />
+        </a>
+
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/Le_baton_de_parole.html">Le bâton de parole</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/Le_Discours_d_un_roi.html">Le Discours d'un Roi</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/Sidney_Lumet.html">Sidney Lumet</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/Le_Cercle.html">Le Cercle</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/fr/The_Sound_of_Silence.html">The Sound of Silence</a>
+                </li>
+                <li class="menu__divider">
+                    <hr class="menu__divider-line">
+                </li>
+                <li class="menu__item">
+                    <a class="menu__sublink" href="/fr/Autres_projets.html">Autres projets</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__sublink" href="/fr/Contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__sublink" href="/fr/index.html">Glossaire</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__sublink" href="/fr/A_propos.html">À propos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main></main>
+    <footer class="footer">
+        <a class="footer__logo-link" href="/fr/index.html">
+            <img class="footer__logo" src="/assets/icons/logo_fonce.svg" alt="Logo" />
+        </a>
+        <nav class="footer__menu">
+            <h3 class="footer__title">Menu</h3>
+        </nav>
+        <div class="footer__contact">
+            <h3 class="footer__title">Contact</h3>
+            <p class="footer__text">Eva LACROIX, MM1 TPB2</p>
+            <a class="footer__mail" href="mailto:lacroixeva32@gmail.com">lacroixeva32@gmail.com</a>
+        </div>
+        <div class="footer__mentions_legales">
+            <h3 class="footer__title">Mentions Légales</h3>
+            <p class="footer__text">“Projet réalisé en 2024 dans le cadre d’un exercice pédagogique au département <a
+                    class="footer__link" href="https://blogdummi.fr/">MMI de Montbéliard</a>”</p>
+        </div>
+        <div class="footer__social">
+            <h3 class="footer__title">Nous suivre</h3>
+            <ul class="footer__list list-unstyled">
+                <li>
+                    <a href="https://www.linkedin.com/in/eva-lacroix-50ab6131a/" aria-label="Visitez ma page linkedin">
+                        <img src="/assets/icons/linkedin.svg" aria-hidden="true" alt="" width="24" height="24" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/_e_lcx_/" aria-label="Visitez ma page instagram">
+                        <img src="/assets/icons/instagram.svg" aria-hidden="true" alt="" width="24" height="24" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/eva.lacroix.184?locale=fr_FR" aria-label="Visitez ma page facebook">
+                        <img src="/assets/icons/facebook.svg" aria-hidden="true" alt="" width="24" height="24" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

@@ -9,11 +9,15 @@ body {
     overflow-x: hidden;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 html {
     scroll-behavior: smooth;
+}
+
+.background__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
 }
