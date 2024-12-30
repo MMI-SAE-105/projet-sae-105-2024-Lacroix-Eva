@@ -36,7 +36,7 @@
 }
 
 .card__description--projet {
-    margin-bottom: 0px;
+    margin-bottom: var(--space1x);
 }
 
 .card__title--projet {

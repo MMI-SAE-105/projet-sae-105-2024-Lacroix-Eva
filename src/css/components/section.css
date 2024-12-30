@@ -10,3 +10,8 @@
 .sections--a_propos{
     margin-bottom: var(--space5x);
 }
+
+.sections--glossary {
+    margin-top: 152px;
+    margin-bottom: var(--space5x);
+}
