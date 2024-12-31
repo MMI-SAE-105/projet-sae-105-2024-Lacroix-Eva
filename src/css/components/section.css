@@ -1,12 +1,70 @@
 
 .section__title {
     margin-top: var(--space3x);
+    margin-bottom: 0px;
 }
 
 .section__text {
-    margin-top: 15px;
+    margin-top: var(--space1x);
+    margin-bottom: 0px;
 }
 
+.section__mise_en_exergue {
+    margin-top: var(--space3x);
+    margin-bottom: 0px;
+    font-family: var(--Mulish);
+    font-size: var(--fs-xs);
+    font-style: italic;
+    font-weight: 600;
+}
+
+.section__citation {
+    margin-top: var(--space3x);
+    margin-bottom: 0px;
+    font-family: var(--Mulish);
+    font-size: var(--fs-xs);
+    font-style: italic;
+    font-weight: 300;
+}
+
+.section__video {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 0;
+    margin-top: var(--space1x);
+}
+
+.section__acces_fin_article {
+    margin-top: var(--space5x);
+    margin-left: var(--space2x);
+    margin-right: var(--space2x);
+}
+
+.section__acces_fin_article--link {
+    color: var(--bleu-foncé);
+    font-family: var(--Mulish);
+    font-size: var(--fs-xs);
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.section__acces_fin_article--link::after {
+    content: "";
+    display: block;
+    background-color: var(--bleu-foncé);
+    margin-top: var(--space1x);
+    width: 79px;
+    height: 1px;
+}
+
+.section__acces_fin_article--signature {
+    margin: 0px;
+    margin-top: var(--space5x);
+    color: var(--bleu-foncé);
+    font-size: var(--fs-xs);
+}
 .sections--a_propos{
     margin-bottom: var(--space5x);
 }

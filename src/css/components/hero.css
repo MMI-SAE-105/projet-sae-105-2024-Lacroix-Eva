@@ -1,11 +1,26 @@
-.hero__description--secondaire {
-    margin-top: 152px;
-    margin-bottom: var(--space2x);
-    font-size: var(--fs-xs);
-}
-
 .hero__title {
     margin-top: 75px;
+}
+
+.hero__subtitle {
+    margin-top: 152px;
+    margin-bottom: 0px;
+}
+
+.hero__img {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 0;
+    margin-top: var(--space3x);
+}
+
+.hero__img__description{
+    font-family: var(--Mulish);
+    font-size: 8px;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 0px;
 }
 
 .hero__title--home {
@@ -17,6 +32,12 @@
 .hero__description--home {
     font-size: var(--fs-m);
     margin-top: 265px;
+}
+
+.hero__description--secondaire {
+    margin-top: 152px;
+    margin-bottom: var(--space2x);
+    font-size: var(--fs-xs);
 }
 
 
