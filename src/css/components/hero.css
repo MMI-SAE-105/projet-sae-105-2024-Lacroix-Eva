@@ -7,6 +7,12 @@
     margin-bottom: 0px;
 }
 
+.hero__description {
+    margin-top: var(--space1x);
+    margin-bottom: 0px;
+    font-size: var(--fs-xs);
+}
+
 .hero__img {
     display: block;
     width: calc(100% - 40px);
@@ -32,6 +38,7 @@
 .hero__description--home {
     font-size: var(--fs-m);
     margin-top: 265px;
+    margin-bottom: var(--space3x);
 }
 
 .hero__description--secondaire {
