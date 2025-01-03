@@ -13,3 +13,22 @@ const page = document.body;
     toggle.ariaExpanded = isClosed;
     ajout_class.classList.toggle("noscroll");
   });
+
+// *** GALLERY ***
+const gallery = document.querySelector(".gallery__ecran");
+const prevButton = document.querySelector(".gallery__button--prev");
+const nextButton = document.querySelector(".gallery__button--next");
+
+if (gallery && prevButton && nextButton) {
+  const items = document.querySelectorAll(".gallery__items");
+  const itemWidth = items[0].clientWidth;
+
+  
+  prevButton.addEventListener("click", () => {
+    gallery.scrollBy({ left: -itemWidth, behavior: "smooth" });
+  });
+
+  nextButton.addEventListener("click", () => {
+    gallery.scrollBy({ left: itemWidth, behavior: "smooth" });
+  });
+}
