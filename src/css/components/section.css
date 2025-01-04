@@ -9,6 +9,15 @@
     margin-bottom: 0px;
 }
 
+.section__indications {
+    margin: 0px;
+    text-align: center;
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
 .section__mise_en_exergue {
     margin-top: var(--space3x);
     margin-bottom: 0px;
@@ -27,6 +36,10 @@
     font-weight: 300;
 }
 
+.section__arrow{
+    margin-right: 15px;
+}
+
 .section__video {
     display: block;
     width: calc(100% - 40px);
@@ -39,7 +52,7 @@
     width: calc(100% - 40px);
     margin: 0 auto;
     padding: 0;
-    margin-top: var(--space3x);
+    margin-top: var(--space1x);
 }
 
 .section__img__description {
@@ -91,4 +104,11 @@
 
 .section__text--untitled {
     margin-top: var(--space2x);
+}
+
+.section--streaming {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: var(--space3x) var(--space2x);
 }
