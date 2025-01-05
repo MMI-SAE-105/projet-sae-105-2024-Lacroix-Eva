@@ -31,14 +31,14 @@
     border-radius: 15px 15px 0px 0px;
 }
 
-.card--projet{
+.card--project{
     border-radius: 20px
 }
 
-.card__description--projet {
+.card__description--project {
     margin-bottom: var(--space1x);
 }
 
-.card__title--projet {
+.card__title--project {
     margin-bottom: var(--space1x);
 }

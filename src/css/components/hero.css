@@ -41,7 +41,7 @@
     margin-bottom: var(--space3x);
 }
 
-.hero__description--secondaire {
+.hero__description--secondary {
     margin-top: 152px;
     margin-bottom: var(--space2x);
     font-size: var(--fs-xs);
