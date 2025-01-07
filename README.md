@@ -6,5 +6,5 @@
 - NOM : LACROIX
 - PRÉNOM : Eva
 - GROUPE : TPB2
-- URL du site :
+- URL du site : https://echoes-of-dialogue.eva-lacroix.fr/
 - URL FIGMA : https://www.figma.com/design/IQg9JGCtD2K3uMYW3QfplB/Maquettes-projet-individuel-%E2%80%94-Eva-LACROIX-(Copy)?node-id=4066-465&t=tGv0sToqTfyEKTSa-1 
