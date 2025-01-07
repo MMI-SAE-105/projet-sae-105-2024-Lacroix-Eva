@@ -29,6 +29,9 @@
     gap: 10px;
     align-self: stretch;
     border-radius: 15px 15px 0px 0px;
+}
+
+.card__img--home {
     mix-blend-mode: overlay;
 }
 

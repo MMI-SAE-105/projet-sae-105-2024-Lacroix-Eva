@@ -6,11 +6,19 @@
 
 .card--timeline {
     margin: 0px var(--space2x) 100px var(--space2x);
-    width: 238px;
     position: relative;
     display: flex;
-    width: 278px;
     height: auto;
+}
+
+.card__title--timeline {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.card__content--timeline {
+    padding: var(--space2x);
 }
 
 .card__name_object--timeline{
@@ -18,37 +26,32 @@
     letter-spacing: 0.6px;
     font-weight: 700;
     font-size: var(--fs-xs);
-    margin: 0px var(--space2x);
+    margin: 0px;
 }
 
 .card__description--timeline {
     margin-bottom: var(--space1x);
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .card__img--timeline {
     border-radius: 0px;
-    margin: 0px var(--space2x) var(--space2x) var(--space2x);
-    max-width: 238px;
-    height: auto;
+    margin: 0px;
 }
 
 .card--timeline::after{
     content: "";
     position: absolute;
     width: 1px;
-    /* Épaisseur de la ligne */
     height: 100px;
-    /* Longueur de la ligne (ajustez selon vos besoins) */
     background: repeating-linear-gradient(to bottom,
             var(--bleu-foncé),
-            /* Couleur de votre ligne */
             var(--bleu-foncé) 4px,
             transparent 4px,
             transparent 8px);
     top: 100%;
-    /* Place la ligne sous la carte */
     left: 50%;
-    /* Aligne au centre de la carte */
     transform: translateX(-50%);
 }
 
