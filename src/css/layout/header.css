@@ -15,4 +15,9 @@
 .header__language {
     display: flex;
     align-items: left;
+    margin-right: var(--space2x);
+}
+
+.header__right {
+    display: flex;
 }
