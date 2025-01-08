@@ -117,14 +117,29 @@
     margin: var(--space3x) var(--space2x);
 }
 
+.section--dowload {
+    display: flex;
+    flex-direction: column;
+    margin: 0px var(--space2x);
+}
+
 .section__audio {
     display: flex;
     width: 70%;
     justify-content: center;
-    margin: var(--space2x) auto 0 auto;
+    margin: var(--space1x) auto 0 auto;
 }
 
 .section__indications--dowload {
     margin-left: var(--space2x);
     margin-right: var(--space2x);
+}
+
+.section__arrow--dowload {
+    width: 24px;
+    height: 24px;
+    transform: rotate(90deg);
+    display: block;
+    margin: 0 auto;
+    margin-top: var(--space1x);
 }
