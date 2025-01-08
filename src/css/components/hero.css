@@ -1,3 +1,7 @@
+/* .hero {
+    box-sizing: border-box;
+} */
+
 .hero__title {
     margin-top: 75px;
 }
@@ -15,11 +19,19 @@
 
 .hero__img {
     display: block;
-    width: calc(100% - 40px);
+    width: 100%;
     margin: 0 auto;
     padding: 0;
     margin-top: var(--space3x);
     mix-blend-mode: overlay;
+}
+
+.hero__img-home {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 5px;
 }
 
 .hero__img__description{
@@ -32,6 +44,8 @@
 
 .hero__caption-img {
     background: var(--filtre-image);
+    width: calc(100% - 40px);
+    margin: auto;
 }
 
 .hero__title--home {
@@ -42,7 +56,7 @@
 
 .hero__description--home {
     font-size: var(--fs-m);
-    margin-top: 265px;
+    margin-top: var(--space1x);
     margin-bottom: var(--space3x);
 }
 
