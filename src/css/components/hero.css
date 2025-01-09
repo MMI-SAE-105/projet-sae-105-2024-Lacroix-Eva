@@ -1,13 +1,9 @@
-/* .hero {
-    box-sizing: border-box;
-} */
-
 .hero__title {
     margin-top: 75px;
 }
 
 .hero__subtitle {
-    margin-top: 152px;
+    margin-top: 180px;
     margin-bottom: 0px;
 }
 
@@ -61,7 +57,7 @@
 }
 
 .hero__description--secondary {
-    margin-top: 152px;
+    margin-top: 180px;
     margin-bottom: var(--space2x);
     font-size: var(--fs-xs);
 }
