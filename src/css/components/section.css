@@ -35,6 +35,18 @@
     font-weight: 300;
 }
 
+.section__quote,
+.section__quote blockquote {
+    margin: 0;
+}
+
+.section__citation--source {
+    display: block;
+    margin: var(--space1x) var(--space2x) 0 var(--space2x);
+    color: var(--bleu-inter);
+    font-style: normal;
+}
+
 .section__arrow{
     margin-right: 15px;
 }
@@ -149,4 +161,33 @@
     display: block;
     margin: 0 auto;
     margin-top: var(--space1x);
+}
+.sitemap {
+    margin: var(--space5x) var(--space2x);
+}
+
+.sitemap__list,
+.sitemap__sublist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sitemap__item {
+    margin-bottom: var(--space3x);
+}
+
+.sitemap__title {
+    margin: 0 0 var(--space2x) 0;
+}
+
+.sitemap__sublist li {
+    margin-bottom: var(--space1x);
+}
+
+.sitemap__link {
+    color: var(--bleu-foncé);
+    font-family: var(--Mulish);
+    font-size: var(--fs-m);
+    font-weight: 700;
 }

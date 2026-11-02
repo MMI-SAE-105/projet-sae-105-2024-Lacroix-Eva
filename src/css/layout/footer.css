@@ -52,3 +52,10 @@
     object-fit: contain;
     margin-right : var(--space1x);
 }
+.footer__text--sitemap {
+    margin-top: var(--space1x);
+}
+
+.footer__text--sitemap .footer__link {
+    text-decoration: underline;
+}

@@ -4,16 +4,37 @@ const nav = document.querySelector(".menu");
 const page = document.body;
 const labelOpen = toggle.getAttribute("aria-label");
 const labelClose = toggle.dataset.labelClose;
+const menuLinks = nav.querySelectorAll("a");
+const lastMenuLink = menuLinks[menuLinks.length - 1];
 
+const setMenu = (open) => {
+  nav.ariaHidden = !open;
+  toggle.ariaExpanded = open;
+  toggle.setAttribute("aria-label", open ? labelClose : labelOpen);
+  page.classList.toggle("noscroll", open);
+};
 
   toggle.addEventListener("click", () => {
     const isOpen = toggle.ariaExpanded === "true";
-    const isClosed = !isOpen;
+    setMenu(!isOpen);
+  });
 
-    nav.ariaHidden = isOpen;
-    toggle.ariaExpanded = isClosed;
-    toggle.setAttribute("aria-label", isClosed ? labelClose : labelOpen);
-    page.classList.toggle("noscroll");
+  // Menu ouvert : le focus reste entre le bouton et les liens du menu, Échap le ferme
+  document.addEventListener("keydown", (event) => {
+    if (toggle.ariaExpanded !== "true") return;
+
+    if (event.key === "Escape") {
+      setMenu(false);
+      toggle.focus();
+    } else if (event.key === "Tab") {
+      if (event.shiftKey && document.activeElement === toggle) {
+        event.preventDefault();
+        lastMenuLink.focus();
+      } else if (!event.shiftKey && document.activeElement === lastMenuLink) {
+        event.preventDefault();
+        toggle.focus();
+      }
+    }
   });
 
 // *** CONTACT FORM ***

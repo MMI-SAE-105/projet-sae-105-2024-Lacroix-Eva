@@ -14,6 +14,7 @@
     <script type="module" src="/src/js/script.js"></script>
 </head>
 <body>
+    <a class="skip-link" href="#contenu-principal">Aller au contenu principal</a>
     <header class="header">
         <img class="background__img" src="/assets/img/Background_pages.webp" alt="Image en background" />
         <a class="header__logo-link" href="/fr/index.html">
@@ -57,10 +58,13 @@
                 <li class="menu__item">
                     <a class="menu__sublink" href="/fr/A_propos.html">À propos</a>
                 </li>
+                <li class="menu__item">
+                    <a class="menu__sublink" href="/fr/Plan_du_site.html">Plan du site</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="contenu-principal" tabindex="-1">
         <div class="hero">
             <h1 class="hero__title">Glossaire</h1>
         </div>
@@ -96,8 +100,9 @@
         </div>
         <div class="footer__mentions_legales">
             <h4 class="footer__title">Mentions Légales</h4>
-            <p class="footer__text">“Projet réalisé en 2024 dans le cadre d’un exercice pédagogique au département <a
-                    class="footer__link" href="https://blogdummi.fr/">MMI de Montbéliard</a>”</p>
+            <p class="footer__text">Projet réalisé en 2024 dans le cadre d’un exercice pédagogique au département <a
+                    class="footer__link" href="https://blogdummi.fr/">MMI de Montbéliard</a></p>
+            <p class="footer__text footer__text--sitemap"><a class="footer__link" href="/fr/Plan_du_site.html">Plan du site</a></p>
         </div>
         <div class="footer__social">
             <h4 class="footer__title">Me suivre</h4>

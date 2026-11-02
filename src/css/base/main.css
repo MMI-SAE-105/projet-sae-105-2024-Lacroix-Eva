@@ -128,3 +128,34 @@ p {
     margin-left: var(--space2x);
     font-size: var(--fs-xs);
 }
+.skip-link {
+    position: absolute;
+    top: var(--space1x);
+    left: var(--space1x);
+    z-index: 1000;
+    padding: var(--space1x) var(--space2x);
+    background-color: var(--bleu-foncé);
+    color: var(--bleu-clair);
+    font-family: var(--Mulish);
+    font-size: var(--fs-s);
+    font-weight: 700;
+    border-radius: 50px;
+    transform: translateY(-200%);
+}
+
+/* Focus clavier visible sur fond clair (contour bleu) comme sur fond foncé (liseré blanc) */
+:is(a, button, input, textarea, select, video, audio, [tabindex]:not([tabindex="-1"])):focus-visible {
+    outline: 3px solid var(--bleu-inter);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px var(--blanc);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+    outline: 2px solid var(--bleu-clair);
+    outline-offset: 2px;
+}
+
+main:focus {
+    outline: none;
+}
