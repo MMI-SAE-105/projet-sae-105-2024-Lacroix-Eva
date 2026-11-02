@@ -35,18 +35,10 @@
     font-weight: bold;
 }
 
-.menu__divider {
-    margin-top: -10px;
-    margin-bottom: 20px;
-    list-style: none;
-}
-
-.menu__divider-line {
-    border: none;
+.menu__item--divided {
     border-top: 1px solid var(--bleu-foncé);
-    margin: 0;
-    height: 0;
-    width: 100%;
+    margin-top: -10px;
+    padding-top: 20px;
 }
 
 .menu__sublink {

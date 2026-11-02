@@ -1,3 +1,24 @@
+@media (min-width: 450px) {
+    body * {
+        display: none;
+    }
+
+    body::before {
+        content: "Ce site est optimisé pour les mobiles désolé :) .";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+
+        inset: 0;
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+
 *,
 *::before,
 *::after {
