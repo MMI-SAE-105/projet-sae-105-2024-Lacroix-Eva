@@ -1,41 +1,72 @@
 .contact__form {
-    margin-right: var(--space2x);
-    margin-top: var(--space5x);
+    margin: var(--space5x) var(--space2x) 0 var(--space2x);
 }
 
-.contact__group::after {
-    content: "";
-    background-color: var(--bleu-foncé);
-    width: 300px;
-    height: 1px;
-    display: block;
-    margin: var(--space2x) var(--space2x) 15px var(--space2x);
-}
-
-.contact__group__message {
+.contact__group {
     display: flex;
-    margin-bottom: 150px;
-}
-
-.contact__group__message::after {
-    content: "";
-    width: 300px;
-    height: 130px;
-    border: 1px solid var(--bleu-foncé);
-    margin: var(--space4x) var(--space2x) 15px var(--space2x);
-    display: block;
-    position: absolute;
+    flex-direction: column;
+    max-width: 300px;
+    margin-bottom: var(--space3x);
 }
 
 .contact__item {
     color: var(--bleu-foncé);
+    font-family: var(--Montserrat);
     font-size: var(--fs-xs);
-    margin-top: 0px;
-    margin-bottom: 0px;
+    line-height: 160%;
+    margin-bottom: var(--space1x);
+}
+
+.contact__input {
+    color: var(--bleu-foncé);
+    font-family: var(--Mulish);
+    font-size: var(--fs-m);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--bleu-foncé);
+    border-radius: 0;
+    padding: 5px 0;
+}
+
+.contact__input--message {
+    border: 1px solid var(--bleu-foncé);
+    height: 130px;
+    padding: var(--space1x);
+    resize: vertical;
+}
+
+.contact__hint {
+    font-style: italic;
+}
+
+.contact__error {
+    color: #b00020;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+}
+
+.contact__error:empty {
+    display: none;
+}
+
+.contact__input[aria-invalid="true"] {
+    border-color: #b00020;
+    border-width: 2px;
+}
+
+.contact__input:focus-visible {
+    outline: 2px solid var(--bleu-inter);
+    outline-offset: 2px;
 }
 
 .contact__champ {
-    margin-bottom: var(--space2x);
-    padding-top: var(--space2x);
+    margin: 0;
+    margin-bottom: var(--space3x);
     font-size: var(--fs-s);
+}
+
+.contact__form .button--contact {
+    margin: 0 0 var(--space5x) 0;
+    border: none;
+    cursor: pointer;
 }

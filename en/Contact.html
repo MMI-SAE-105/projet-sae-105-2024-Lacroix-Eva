@@ -26,7 +26,7 @@
                 <img class="header__language" src="/assets/icons/langue_en.svg" alt="Switch to French" />
             </a>
 
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <button class="header__menu-btn menu-btn" aria-label="Open menu" data-label-close="Close menu" aria-expanded="false" aria-controls="mainNav">
                 <span class="menu-btn__bar" aria-hidden="true"></span>
             </button>
         </div>
@@ -68,22 +68,40 @@
             <p class="hero__description hero__description--secondary">If you have any questions, suggestions, or simply wish to discuss the theme of communication through the ages, do not hesitate to contact us. Fill out the form below and we will get back to you as soon as possible.
             </p>
         </div>
-        <div class="contact__form">
+        <form class="contact__form" name="contact" method="POST" data-netlify="true" novalidate>
+            <input type="hidden" name="form-name" value="contact">
+            <p class="contact__champ">Fields marked with an asterisk (*) are required.</p>
             <div class="contact__group">
-                <p class="contact__item">Name *</p>
+                <label class="contact__item" for="contact-nom">Full name *</label>
+                <input class="contact__input" type="text" id="contact-nom" name="nom" autocomplete="name" required
+                    aria-describedby="contact-nom-error"
+                    data-error-required="Please enter your full name.">
+                <p class="contact__error" id="contact-nom-error"></p>
             </div>
             <div class="contact__group">
-                <p class="contact__item">Email *</p>
+                <label class="contact__item" for="contact-email">Email address * <span class="contact__hint">(format: name@example.com)</span></label>
+                <input class="contact__input" type="email" id="contact-email" name="email" autocomplete="email" required
+                    aria-describedby="contact-email-error"
+                    data-error-required="Please enter your email address."
+                    data-error-format="The email address is not valid. It must be in the format name@example.com.">
+                <p class="contact__error" id="contact-email-error"></p>
             </div>
             <div class="contact__group">
-                <p class="contact__item">Subject *</p>
+                <label class="contact__item" for="contact-objet">Subject *</label>
+                <input class="contact__input" type="text" id="contact-objet" name="objet" required
+                    aria-describedby="contact-objet-error"
+                    data-error-required="Please enter the subject of your message.">
+                <p class="contact__error" id="contact-objet-error"></p>
             </div>
-            <div class="contact__group__message">
-                <p class="contact__item">Message *</p>
+            <div class="contact__group contact__group--message">
+                <label class="contact__item" for="contact-message">Message *</label>
+                <textarea class="contact__input contact__input--message" id="contact-message" name="message" required
+                    aria-describedby="contact-message-error"
+                    data-error-required="Please enter your message."></textarea>
+                <p class="contact__error" id="contact-message-error"></p>
             </div>
-            <p class="contact__champ">*Required fields</p>
-            <a class="button button--contact" href="#">Send</a>
-        </div>
+            <button class="button button--contact" type="submit">Send</button>
+        </form>
     </main>
     <footer class="footer">
         <a class="footer__logo-link" href="/en/index.html">
