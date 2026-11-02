@@ -75,6 +75,11 @@
     margin-right: var(--space2x);
 }
 
+.section__article_end_access-list {
+    margin: 0;
+    padding: 0;
+}
+
 .section__article_end_access--link {
     color: var(--bleu-foncé);
     font-family: var(--Mulish);

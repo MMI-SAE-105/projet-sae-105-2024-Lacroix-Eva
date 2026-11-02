@@ -16,8 +16,8 @@
 </head>
 
 <body>
-    <img class="background__img" src="/assets/img/Background_pages.webp" alt="Background Image" />
     <header class="header">
+        <img class="background__img" src="/assets/img/Background_pages.webp" alt="Background Image" />
         <a class="header__logo-link" href="/en/index.html">
             <img class="header__logo" src="/assets/icons/logo_clair.svg" alt="Echoes of Dialogue Logo" />
         </a>
@@ -105,20 +105,20 @@
             <section class="section">
                 <h3 class="section__title" id="gallery-heading">Gallery of Films on the Power of Speech:</h3>
                 <div class="gallery__container" aria-labelledby="gallery-heading">
-                    <div class="gallery__ecran">
-                        <div class="gallery__items" role="region" aria-live="polite">
+                    <div class="gallery__ecran" role="list">
+                        <div class="gallery__items" role="listitem" aria-live="polite">
                             <div class="section__gallery">
                                 <img class="section__gallery--img" src="/assets/img/Galerie/Network.webp" alt="/" />
                                 <p class="section__gallery--img-description">Network (1976)</p>
                             </div>
                         </div>
-                        <div class="gallery__items" role="region" aria-live="polite">
+                        <div class="gallery__items" role="listitem" aria-live="polite">
                             <div class="section__gallery">
                                 <img class="section__gallery--img" src="/assets/img/Galerie/Inglourious_Basterds.webp" alt="/" />
                                 <p class="section__gallery--img-description">Inglourious Basterds (2009)</p>
                             </div>
                         </div>
-                        <div class="gallery__items" role="region" aria-live="polite">
+                        <div class="gallery__items" role="listitem" aria-live="polite">
                             <div class="section__gallery">
                                 <img class="section__gallery--img" src="/assets/img/Galerie/Le_Discours_d_un_roi.webp" alt="/" />
                                 <p class="section__gallery--img-description">The King's Speech (2010)</p>
@@ -136,10 +136,12 @@
                 </div>
             </section>
             <div class="section__article_end_access">
-                <a class="section__article_end_access--link" href="/en/The_talking_stick.html">See the article on the Talking stick</a>
-                <a class="section__article_end_access--link" href="/en/Sidney_Lumet.html">See the article on director Sidney Lumet</a>
-                <a class="section__article_end_access--link" href="/en/The_Circle.html">See the article on the book "The Circle"</a>
-                <a class="section__article_end_access--link" href="/en/The_Sound_of_Silence.html">See the article on the music "The Sound of Silence"</a>
+                <ul class="section__article_end_access-list list-unstyled">
+                    <li><a class="section__article_end_access--link" href="/en/The_talking_stick.html">See the article on the Talking stick</a></li>
+                    <li><a class="section__article_end_access--link" href="/en/Sidney_Lumet.html">See the article on director Sidney Lumet</a></li>
+                    <li><a class="section__article_end_access--link" href="/en/The_Circle.html">See the article on the book "The Circle"</a></li>
+                    <li><a class="section__article_end_access--link" href="/en/The_Sound_of_Silence.html">See the article on the music "The Sound of Silence"</a></li>
+                </ul>
                 <p class="section__article_end_access--signature">By Eva LACROIX <br> Published on Monday at 01:45 PM</p>
             </div>
         </div>
