@@ -1,2 +1,4 @@
 / /fr/ 302! Language=fr
 / /en/ 302! Language=en
+/en/* /en/404.html 404
+/* /fr/404.html 404
