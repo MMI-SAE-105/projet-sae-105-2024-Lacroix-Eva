@@ -149,6 +149,14 @@
     margin: var(--space1x) auto 0 auto;
 }
 
+.section__spotify-player {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    margin-top: var(--space1x);
+}
+
 .section__indications--dowload {
     margin-left: var(--space2x);
     margin-right: var(--space2x);
