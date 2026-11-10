@@ -113,21 +113,21 @@
             </section>
             <section class="section">
                 <h3 class="section__title" id="gallery-heading">Gallery of Films on the Power of Speech:</h3>
-                <div class="gallery__container" aria-labelledby="gallery-heading">
+                <div class="gallery__container" role="region" aria-labelledby="gallery-heading">
                     <div class="gallery__ecran" role="list">
-                        <div class="gallery__items" role="listitem" aria-live="polite">
+                        <div class="gallery__items" role="listitem">
                             <figure class="figure section__gallery" role="figure" aria-label="Network (1976)">
                                 <img class="section__gallery--img" src="/assets/img/Galerie/Network.webp" alt="Poster for Sidney Lumet’s film Network: four actors in suits above the title and a drawing of a man pointing a gun at his head" />
                                 <figcaption class="section__gallery--img-description">Network (1976)</figcaption>
                             </figure>
                         </div>
-                        <div class="gallery__items" role="listitem" aria-live="polite">
+                        <div class="gallery__items" role="listitem">
                             <figure class="figure section__gallery" role="figure" aria-label="Inglourious Basterds (2009)">
                                 <img class="section__gallery--img" src="/assets/img/Galerie/Inglourious_Basterds.webp" alt="Poster for Quentin Tarantino’s film Inglourious Basterds: Brad Pitt and two armed soldiers walking forward on a red background" />
                                 <figcaption class="section__gallery--img-description">Inglourious Basterds (2009)</figcaption>
                             </figure>
                         </div>
-                        <div class="gallery__items" role="listitem" aria-live="polite">
+                        <div class="gallery__items" role="listitem">
                             <figure class="figure section__gallery" role="figure" aria-label="The King's Speech (2010)">
                                 <img class="section__gallery--img" src="/assets/img/Galerie/Le_Discours_d_un_roi.webp" alt="Yellow poster for the film The King’s Speech: the lower half of Colin Firth’s face in front of an old radio microphone" />
                                 <figcaption class="section__gallery--img-description">The King's Speech (2010)</figcaption>
@@ -135,6 +135,7 @@
                         </div>
                     </div>
                 </div>
+                <p class="visually-hidden" role="status" data-gallery-status data-template="Film {n} of {total}: {title}"></p>
                 <div class="gallery__controls">
                     <button class="gallery__button gallery__button--prev" aria-label="Scroll left">
                         <img src="/assets/icons/arrow.svg" alt="" />

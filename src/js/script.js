@@ -97,4 +97,24 @@ if (gallery && prevButton && nextButton) {
   nextButton.addEventListener("click", () => {
     gallery.scrollBy({ left: itemWidth, behavior: "smooth" });
   });
+
+  // Annonce le film affiché aux lecteurs d'écran (message de statut, RGAA 7.5)
+  const status = document.querySelector("[data-gallery-status]");
+  if (status) {
+    let current = 0;
+    let timer;
+    gallery.addEventListener("scroll", () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        const index = Math.round(gallery.scrollLeft / items[0].offsetWidth);
+        if (index === current || !items[index]) return;
+        current = index;
+        const title = items[index].querySelector("figcaption").textContent.trim();
+        status.textContent = status.dataset.template
+          .replace("{n}", index + 1)
+          .replace("{total}", items.length)
+          .replace("{title}", title);
+      }, 200);
+    });
+  }
 }

@@ -127,21 +127,21 @@
             </section>
             <section class="section">
                 <h3 class="section__title" id="gallery-heading">Galerie de films sur le pouvoir de la parole :</h3>
-                <div class="gallery__container" aria-labelledby="gallery-heading">
+                <div class="gallery__container" role="region" aria-labelledby="gallery-heading">
                     <div class="gallery__ecran" role="list">
-                        <div class="gallery__items" role="listitem" aria-live="polite">
+                        <div class="gallery__items" role="listitem">
                             <figure class="figure section__gallery" role="figure" aria-label="Network (1976)">
                                 <img class="section__gallery--img" src="/assets/img/Galerie/Network.webp" alt="Affiche du film Network de Sidney Lumet : quatre acteurs en costume au-dessus du titre et d’un dessin d’homme pointant un pistolet sur sa tête" />
                                 <figcaption class="section__gallery--img-description">Network (1976)</figcaption>
                             </figure>
                         </div>
-                        <div class="gallery__items" role="listitem" aria-live="polite">
+                        <div class="gallery__items" role="listitem">
                             <figure class="figure section__gallery" role="figure" aria-label="Inglourious Basterds (2009)">
                                 <img class="section__gallery--img" src="/assets/img/Galerie/Inglourious_Basterds.webp" alt="Affiche du film Inglourious Basterds de Quentin Tarantino : Brad Pitt et deux soldats armés marchent vers l’avant sur fond rouge" />
                                 <figcaption class="section__gallery--img-description">Inglourious Basterds (2009)</figcaption>
                             </figure>
                         </div>
-                        <div class="gallery__items" role="listitem" aria-live="polite">
+                        <div class="gallery__items" role="listitem">
                             <figure class="figure section__gallery" role="figure" aria-label="Le Discours d’un Roi (2010)">
                                 <img class="section__gallery--img" src="/assets/img/Galerie/Le_Discours_d_un_roi.webp" alt="Affiche jaune du film Le Discours d’un Roi : le bas du visage de Colin Firth face à un ancien microphone de radio" />
                                 <figcaption class="section__gallery--img-description">Le Discours d’un Roi (2010)</figcaption>
@@ -149,6 +149,7 @@
                         </div>
                     </div>
                 </div>
+                <p class="visually-hidden" role="status" data-gallery-status data-template="Film {n} sur {total} : {title}"></p>
                 <div class="gallery__controls">
                     <button class="gallery__button gallery__button--prev" aria-label="Défiler vers la gauche">
                         <img src="/assets/icons/arrow.svg" alt="" />

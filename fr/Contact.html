@@ -80,7 +80,7 @@
                 <input class="contact__input" type="text" id="contact-nom" name="nom" autocomplete="name" required
                     aria-describedby="contact-nom-error"
                     data-error-required="Veuillez saisir votre nom et prénom.">
-                <p class="contact__error" id="contact-nom-error"></p>
+                <p class="contact__error" role="alert" id="contact-nom-error"></p>
             </div>
             <div class="contact__group">
                 <label class="contact__item" for="contact-email">Adresse e-mail * <span class="contact__hint">(format : nom@exemple.fr)</span></label>
@@ -88,21 +88,21 @@
                     aria-describedby="contact-email-error"
                     data-error-required="Veuillez saisir votre adresse e-mail."
                     data-error-format="L’adresse e-mail n’est pas valide. Elle doit être au format nom@exemple.fr.">
-                <p class="contact__error" id="contact-email-error"></p>
+                <p class="contact__error" role="alert" id="contact-email-error"></p>
             </div>
             <div class="contact__group">
                 <label class="contact__item" for="contact-objet">Objet du message *</label>
                 <input class="contact__input" type="text" id="contact-objet" name="objet" required
                     aria-describedby="contact-objet-error"
                     data-error-required="Veuillez saisir l’objet de votre message.">
-                <p class="contact__error" id="contact-objet-error"></p>
+                <p class="contact__error" role="alert" id="contact-objet-error"></p>
             </div>
             <div class="contact__group contact__group--message">
                 <label class="contact__item" for="contact-message">Message *</label>
                 <textarea class="contact__input contact__input--message" id="contact-message" name="message" required
                     aria-describedby="contact-message-error"
                     data-error-required="Veuillez saisir votre message."></textarea>
-                <p class="contact__error" id="contact-message-error"></p>
+                <p class="contact__error" role="alert" id="contact-message-error"></p>
             </div>
             <button class="button button--contact" type="submit">Envoyer</button>
         </form>
