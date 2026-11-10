@@ -23,9 +23,10 @@
             <img class="header__logo" src="/assets/icons/logo_clair.svg" alt="Echoes of Dialogue - Home" />
         </a>
         <div class="header__right">
-            <a class="header__language-link" href="/fr/Contact.html">
-                <img class="header__language" src="/assets/icons/langue_en.svg" alt="Switch to French" />
-            </a>
+            <div class="header__language">
+                <a class="header__language-link header__language-item" href="/fr/Contact.html" hreflang="fr" lang="fr">FR<span class="visually-hidden"> - version française</span></a>
+                <span class="header__language-item header__language-item--current">EN</span>
+            </div>
 
             <button class="header__menu-btn menu-btn" aria-label="Open menu" data-label-close="Close menu" aria-expanded="false" aria-controls="mainNav">
                 <span class="menu-btn__bar" aria-hidden="true"></span>

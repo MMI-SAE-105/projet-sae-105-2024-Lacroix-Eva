@@ -15,8 +15,23 @@
 
 .header__language {
     display: flex;
-    align-items: left;
+    align-items: center;
+    gap: 6px;
     margin-right: var(--space2x);
+    font-family: var(--Montserrat);
+    font-size: var(--fs-xs);
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+
+/* Langue active en clair, l’autre langue en gris (comme l’ancienne image) */
+.header__language-item {
+    color: var(--gris);
+    text-decoration: none;
+}
+
+.header__language-item--current {
+    color: var(--bleu-clair);
 }
 
 .header__right {

@@ -12,6 +12,13 @@
     transition: all 0.3s ease-in-out;
     padding-left: var(--space2x);
     padding-right: var(--space2x);
+    padding-bottom: var(--space3x);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+/* Menu ouvert : la page derrière ne défile plus */
+body.noscroll {
     overflow: hidden;
 }
 
@@ -59,6 +66,7 @@
 
 .menu-btn {
     position: relative;
+    z-index: 2; /* le bouton fermer reste au-dessus du menu ouvert */
     width: 24px;
     height: 16px;
     display: flex;
@@ -114,4 +122,11 @@
 .menu-btn[aria-expanded="true"] .menu-btn__bar::after {
     transform: rotate(90deg);
     top: 0;
+}
+
+/* Menu ouvert : le bouton fermer reste visible même si la page était défilée */
+.menu-btn[aria-expanded="true"] {
+    position: fixed;
+    top: 43.5px;
+    right: var(--space2x);
 }

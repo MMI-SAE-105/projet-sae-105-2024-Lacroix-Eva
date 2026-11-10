@@ -21,9 +21,10 @@
             <img class="header__logo" src="/assets/icons/logo_clair.svg" alt="Echoes of Dialogue - Accueil" />
         </a>
         <div class="header__right">
-            <a class="header__language-link" href="/en/The_Kings_Speech.html">
-                <img class="header__language" src="/assets/icons/langue_fr.svg" alt="Passer en langue anglaise" />
-            </a>
+            <div class="header__language">
+                <span class="header__language-item header__language-item--current">FR</span>
+                <a class="header__language-link header__language-item" href="/en/The_Kings_Speech.html" hreflang="en" lang="en">EN<span class="visually-hidden"> - English version</span></a>
+            </div>
 
             <button class="header__menu-btn menu-btn" aria-label="Ouvrir le menu" data-label-close="Fermer le menu" aria-expanded="false" aria-controls="mainNav">
                 <span class="menu-btn__bar" aria-hidden="true"></span>
